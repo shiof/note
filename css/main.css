@@ -16,13 +16,13 @@ h1 {
   font-family: monospace;
   font-weight: bold;
 }
-h2 { color: rgba(220,220,0,0.7); }
-h3 { color: rgba(220,220,0,0.6); }
-h4 { color: rgba(220,220,0,0.5); }
-h5 { color: rgba(220,220,0,0.4); }
-h6 { color: rgba(220,220,0,0.3); }
+h2 { color: #52c41a; }
+h3 { color: #73d13d; }
+h4 { color: #95de64; }
+h5 { color: #b7eb8f; }
+h6 { color: #d9f7be; }
 footer {
-    color: rgba(220,220,0,0.8);
+    color: #73d13d;
     font-weight: bold;
     //width: 60%;
     border-top: dashed 1px rgba(255,255,255,0.5);
@@ -32,7 +32,7 @@ footer {
 header {
     margin-top: 25px;
     margin-bottom: 10px;
-    color: rgba(220,220,0,0.9);
+    color: #73d13d;
 }
 header p {
     text-align: left;
@@ -42,7 +42,10 @@ header p {
 }
 a {
     text-decoration: none;
-    color: rgba(220,220,0,0.8);
+    color: #52c41a;
+}
+a:hover {
+    color: #389e0d;
 }
 .menu {
     border-top: 1px dashed rgba(255,255,255,0.5);
@@ -60,18 +63,15 @@ a {
 }
 .menu ul li a {
     text-decoration: none;
-    color: rgba(220,220,0,0.8);
+    color: #52c41a;
 }
 .menu ul li a:hover {
     padding: 2px;
-    border-left: 1px dashed rgba(220,220,0,0.5);
-    border-right: 1px dashed rgba(220,220,0,0.5);
+    border-left: 1px dashed #95de64;
+    border-right: 1px dashed #95de64;
 }
 main {
     text-align: left;
-}
-a:hover {
-		color: rgba(220,220,0,0.6);
 }
 pre {
     background-color: rgba(255,255,255,0.05);
