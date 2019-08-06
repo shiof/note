@@ -4,6 +4,8 @@ layout: content
 
 ### 文章
 
+~~~
+
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
@@ -17,9 +19,13 @@ layout: content
         </li>
     {% endfor %}
 </ul>
+
+~~~
 
 ### 笔记
 
+~~~
+
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
@@ -34,7 +40,12 @@ layout: content
     {% endfor %}
 </ul>
 
+~~~
+
 ### 项目
+
+~~~
+
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
@@ -48,3 +59,5 @@ layout: content
         </li>
     {% endfor %}
 </ul>
+
+~~~
