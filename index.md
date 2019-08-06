@@ -2,7 +2,7 @@
 layout: content
 ---
 
-### 文章
+#### 文章
 
 
 <ul class="border">
@@ -21,7 +21,7 @@ layout: content
 
 
 
-### 笔记
+#### 笔记
 
 <ul class="border">
     {% for post in site.categories.blog %}
@@ -37,7 +37,7 @@ layout: content
     {% endfor %}
 </ul>
 
-### 项目
+#### 项目
 
 <ul class="border">
     {% for post in site.categories.blog %}
