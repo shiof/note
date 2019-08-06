@@ -215,9 +215,21 @@ table a {
 .number {
     color: rgba(255,255,255,0.7);
 }
+.border {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px dashed rgba(255,255,255,0.5);
+    padding: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow:auto;
+    font-family: monospace;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+}
 
 blockquote {
-  border-left: unset;
-margin: unset;
+    border-left: unset;
+    margin: unset;
     font-size: 12px;
 }

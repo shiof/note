@@ -5,7 +5,7 @@ layout: content
 ### 文章
 
 
-<ul class="posts highlight">
+<ul class="border">
     {% for post in site.categories.blog %}
         <li>
             <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -23,38 +23,32 @@ layout: content
 
 ### 笔记
 
-<div class="highlight">
-    <pre class="highlight">
-        {% for post in site.categories.blog %}
-            <li>
-                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                @ {
-                {% assign tag = post.tags | sort %}
-                {% for category in tag %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
-                {% assign tag = nil %}
-                }
-            </li>
-        {% endfor %}
-    </pre>
-</div>
+<ul class="border">
+    {% for post in site.categories.blog %}
+        <li>
+            <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            @ {
+            {% assign tag = post.tags | sort %}
+            {% for category in tag %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
+            {% assign tag = nil %}
+            }
+        </li>
+    {% endfor %}
+</ul>
 
 ### 项目
 
-<div class="highlight">
-    <pre class="highlight">
-        <ul class="posts">
-            {% for post in site.categories.blog %}
-                <li>
-                    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    @ {
-                    {% assign tag = post.tags | sort %}
-                    {% for category in tag %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
-                    {% assign tag = nil %}
-                    }
-                </li>
-            {% endfor %}
-        </ul>
-    </pre>
-</div>
+<ul class="border">
+    {% for post in site.categories.blog %}
+        <li>
+            <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            @ {
+            {% assign tag = post.tags | sort %}
+            {% for category in tag %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
+            {% assign tag = nil %}
+            }
+        </li>
+    {% endfor %}
+</ul>
