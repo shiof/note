@@ -1,6 +1,6 @@
-# Clyell
+# note
 
-[https://gjuniioor.github.io/clyell](https://gjuniioor.github.io/clyell)
+[https://wangspx.github.io/note](https://wangspx.github.io/note)
 
 ### About
 
@@ -33,7 +33,7 @@ It's just one more [jekyll](https://github.com/jekyll/jekyll) theme. Maybe it's 
 # Site settings
 title: "gjuniioor"
 bye_message: "Thx!"
-baseurl: "/clyell/"
+baseurl: "/note/"
 url: "https://gjuniioor.github.io"
 disqus: gjuniioor
 
