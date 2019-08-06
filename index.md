@@ -35,23 +35,23 @@ It's just one more [jekyll](https://github.com/jekyll/jekyll) theme. Maybe it's 
 
 ~~~ yml
 # Site settings
-title: "gjuniioor"
+title: "Wangsp"
 bye_message: "Thx!"
 baseurl: "/note/"
-url: "https://gjuniioor.github.io"
-disqus: gjuniioor
+url: "https://Wangsp.github.io"
+disqus: Wangsp
 
 # Header settings
-nick: "gjuniioor"
+nick: "Wangsp"
 mail:
     domain: "protonmail"
     ext: "ch"
 source_code:
     server: "github.com"
-    nick: "gjuniioor"
+    nick: "Wangsp"
 blog:
     server: "wordpress.com"
-    nick: "gjuniioor"
+    nick: "Wangsp"
 fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
 
 # Build settings
