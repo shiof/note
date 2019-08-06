@@ -36,7 +36,7 @@ It's just one more [jekyll](https://github.com/jekyll/jekyll) theme. Maybe it's 
 ~~~ yml
 # Site settings
 title: "Wangsp"
-bye_message: "Thx!"
+bye_message: "Copyright © 2019 Wang sp"
 baseurl: "/note/"
 url: "https://Wangsp.github.io"
 disqus: Wangsp
