@@ -2,54 +2,16 @@
 layout: content
 ---
 
-# note
-
-[https://wangspx.github.io/note](https://wangspx.github.io/note)
-
-### About
-
-It's just one more [jekyll](https://github.com/jekyll/jekyll) theme. Maybe it's has some appearance like a linux console. :)
-
-[Bootstrap](http://getbootstrap.com/) was added to turn responsible. Thanks, [@magnunleno](https://github.com/magnunleno).
-
-### Features
-
-- [x] Google analytics
-- [x] Disqus
-- [x] Responsible
-- [x] Highlights for code
-
-### Characteristics
-
-- [x] Customized (and nice :P) 404 page
-- [x] Simple
-- [x] Friendly to read
-
-
-### Config file example
-
-~~~ yml
-# Site settings
-title: "Wangsp"
-bye_message: "Copyright © 2019 Wang sp"
-baseurl: "/note/"
-url: "https://Wangsp.github.io"
-disqus: Wangsp
-
-# Header settings
-nick: "Wangsp"
-mail:
-    domain: "protonmail"
-    ext: "ch"
-source_code:
-    server: "github.com"
-    nick: "Wangsp"
-blog:
-    server: "wordpress.com"
-    nick: "Wangsp"
-fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
-
-# Build settings
-markdown: kramdown
-permalink: /:categories/:title/
-~~~
+<ul class="posts">
+    {% for post in site.categories.blog %}
+        <li>
+            <span class="post-date">{{ post.date | date: "YYYY-MM-DD" }}</span>
+            <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            @ {
+            {% assign tag = post.tags | sort %}
+            {% for category in tag %}<span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
+            {% assign tag = nil %}
+            }
+        </li>
+    {% endfor %}
+</ul>

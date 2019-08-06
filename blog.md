@@ -5,9 +5,6 @@ permalink: /blog/
 ---
 
 <ul class="posts">
-    <script>
-        console.log("{{site}}");
-    </script>
     {% for post in site.categories.blog %}
         <li>
             <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
