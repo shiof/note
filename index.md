@@ -2,7 +2,8 @@
 layout: content
 ---
 
-<h1>文章</h1>
+### 文章
+
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
@@ -17,7 +18,8 @@ layout: content
     {% endfor %}
 </ul>
 
-<h1>笔记</h1>
+### 笔记
+
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
@@ -32,7 +34,7 @@ layout: content
     {% endfor %}
 </ul>
 
-<h1>项目</h1>
+### 项目
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
