@@ -1,0 +1,23 @@
+---
+  layout: post
+  title: [docker] 常用命令
+  categories: java
+---
+
+#### 删除为 `none` 镜像
+
+~~~shell
+docker images|grep none|awk '{print $3 }'|xargs docker rmi -f
+~~~
+
+### 创建`sonarqube`容器
+
+~~~shell
+docker run -itd --name sonarqube \
+    -p 9000:9000 \
+    -e sonar.jdbc.username=sonar \
+    -e sonar.jdbc.password=sonar \
+    -e sonar.jdbc.url="jdbc:postgresql://localhost/sonar" \
+    --restart=always \
+    sonarqube
+~~~
