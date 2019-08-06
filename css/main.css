@@ -11,7 +11,7 @@ body {
     //width: 800px;
 }
 h1 {
-  color: rgba(220,220,0,0.8);
+  color: #52c41a;
   font-size: 24px;
   font-family: monospace;
   font-weight: bold;
@@ -204,10 +204,10 @@ table a {
     color: rgba(255,255,255,0.3);
 }
 .reserved {
-    color: rgba(220,220,0,0.4);
+    color: #135200;
 }
 .string {
-    color: rgba(220,220,0,0.7);
+    color: #237804;
 }
 .function {
     color: rgba(255,255,255,0.5);
