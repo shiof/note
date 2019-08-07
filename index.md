@@ -22,21 +22,23 @@ layout: home
 <div>
     <p>total: {{site.categories.article | size}}</p>
     {% for post in site.categories.article %}
-        <div class="row article-row">
-            <div class="col-sm">-rwxr-xr-x. 1 </div>
-            <div class="col-sm">
-            {% assign tag = post.tags | sort %}
-                {% for category in tag %}
-                 <span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a> </span>
-                {% endfor %}
-            {% assign tag = nil %}
+        <div class="row">
+            <div class="col pr-0">
+                <span>-rwxr-xr-x. 1 </span>
+                <span>
+                    {% assign tag = post.tags | sort %}
+                        {% for category in tag %}
+                         <span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a> </span>
+                        {% endfor %}
+                    {% assign tag = nil %}
+                </span>
+                <span class="float-right text-right">{{ post.date | date: "%b %d %Y" }}</span>
+                <span class="px-3 float-right text-right">{{ post.content | number_of_words }}</span>
             </div>
-            <div class="col-sm text-right">{{ post.content | number_of_words }}</div>
-            <div class="col-sm text-right">{{ post.date | date: "%b %d %Y" }}</div>
-            <div class="col-sm-8"><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+            <div class="col-8"><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
         </div>
     {% endfor %}
-    <p><a href="">more</a></p>
+    <p><a href="">more...</a></p>
 </div>
 
 [root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.baseurl }}/articles">wangspx.github.io/note</a>

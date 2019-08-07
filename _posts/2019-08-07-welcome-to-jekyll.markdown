@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Welcome to Jekyll!"
 date:   2019-08-07 08:58:55 +0800
 categories: article
