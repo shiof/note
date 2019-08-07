@@ -13,6 +13,7 @@ html, body {
     color: #b3b3b3;
 }
 
+h1 { color: #52c41a; }
 h2 { color: #52c41a; }
 h3 { color: #52c41a; }
 h4 { color: #52c41a; }
@@ -47,6 +48,10 @@ footer {
     color: #73d13d;
     font-weight: bold;
     text-align: center;
+}
+
+.container {
+    max-width: 980px;
 }
 
 .row{
