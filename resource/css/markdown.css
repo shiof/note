@@ -1,78 +1,7 @@
-body {
-    border-top: 1px dashed rgba(255,255,255,0.5);
-    background-color: #000000;
-    margin: 0 auto;
-    padding: 0;
-    font-family: monospace;
-    font-size: 12px;
-    line-height: unset !important;
-    color: rgba(255,255,255,0.6);
-    text-align: center;
-    //width: 800px;
-}
-h1 {
-  color: #52c41a;
-  font-size: 24px;
-  font-family: monospace;
-  font-weight: bold;
-}
-h2 { color: #52c41a; }
-h3 { color: #73d13d; }
-h4 { color: #95de64; }
-h5 { color: #b7eb8f; }
-h6 { color: #d9f7be; }
-footer {
-    color: #73d13d;
-    font-weight: bold;
-    //width: 60%;
-    border-top: dashed 1px rgba(255,255,255,0.5);
-    margin: 20px auto 15px;
-    padding-top: 10px;
-}
-header {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    color: #73d13d;
-}
-header p {
-    text-align: left;
-    margin: 0;
-    /* color: rgba(220,220,0,0.7); */
-    color: rgba(255,255,255,0.5);
-}
-a {
-    text-decoration: none;
-    color: #52c41a;
-}
-a:hover {
-    color: #389e0d;
-}
-.menu {
-    border-top: 1px dashed rgba(255,255,255,0.5);
-    border-bottom: 1px dashed rgba(255,255,255,0.5);
-    margin-bottom: 10px;
-}
-.menu ul {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding-left: 0px;
-}
-.menu ul li {
-    display: inline;
-    margin-left: 5px;
-}
-.menu ul li a {
-    text-decoration: none;
-    color: #52c41a;
-}
-.menu ul li a:hover {
-    padding: 2px;
-    border-left: 1px dashed #95de64;
-    border-right: 1px dashed #95de64;
-}
-main {
-    text-align: left;
-}
+/* End Table style */
+
+/* Syntax highlighting styles */
+/* ----------------------------------------------------------*/
 pre {
     background-color: rgba(255,255,255,0.05);
     border: 1px dashed rgba(255,255,255,0.5);
@@ -81,63 +10,10 @@ pre {
     -moz-border-radius: 3px;
     border-radius: 3px;
     overflow:auto;
-		font-family: monospace;
-		font-size: 12px;
-		color: rgba(255,255,255,0.4);
+    font-family: monospace;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
 }
-img {
-    width: 80%;
-    margin-left: 10%;
-    border: 1px dashed rgba(255,255,255,0.5);
-    padding: 8px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-iframe {
-    width: 750px;
-    height: 400px;
-    border: 1px dashed rgba(255,255,255,0.5);
-    padding: 8px;
-		margin-bottom: 10px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-.feed-recomendation {
-	border-top: 1px dashed rgba(255,255,255,0.5);
-	border-bottom: 1px dashed rgba(255,255,255,0.5);
-	margin-top: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-/* Table style */
-audio {
-  width: 90%;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-td {
-    border: 1px dashed rgba(255, 255, 255, 0.5);
-}
-
-caption {
-    display: none;
-}
-
-table a {
-    color: white;
-}
-/* End Table style */
-
-/* Syntax highlighting styles */
-/* ----------------------------------------------------------*/
 
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -199,37 +75,3 @@ table a {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 /* End Syntax highlighting styles */
-
-.comment {
-    color: rgba(255,255,255,0.3);
-}
-.reserved {
-    color: #135200;
-}
-.string {
-    color: #237804;
-}
-.function {
-    color: rgba(255,255,255,0.5);
-}
-.number {
-    color: rgba(255,255,255,0.7);
-}
-.border {
-    background-color: rgba(255,255,255,0.05);
-    border: 1px dashed rgba(255,255,255,0.5);
-    padding: 8px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    overflow:auto;
-    font-family: monospace;
-    font-size: 12px;
-    color: rgba(255,255,255,0.4);
-}
-
-blockquote {
-    border-left: unset;
-    margin: unset;
-    font-size: 12px;
-}
