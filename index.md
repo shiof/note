@@ -21,7 +21,7 @@ layout: default
 
 [https://github.com/wangspx](https://github.com/wangspx)
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.baseurl }}/articles">wangspx.github.io/tags</a>
+[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.url }}/articles">wangspx.github.io/tags</a>
 
 <div>
 <p>total: {{site.tags | size}}</p>
@@ -32,7 +32,7 @@ layout: default
 </p>
 </div>
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.baseurl }}/articles">wangspx.github.io/articles</a> <span> | head -n 5</span>
+[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">wangspx.github.io/articles</a> <span> | head -n 5</span>
 
 <div>
     <p>total: {{site.categories.article | size}}</p>
@@ -43,20 +43,20 @@ layout: default
                 <span>
                     {% assign tag = post.tags | sort %}
                         {% for category in tag %}
-                         <span><a href="{{ site.baseurl }}category/#{{ category }}" class="reserved">{{ category }}</a> </span>
+                         <span><a href="{{ site.url }}category/#{{ category }}" class="reserved">{{ category }}</a> </span>
                         {% endfor %}
                     {% assign tag = nil %}
                 </span>
                 <span class="float-right text-right">{{ post.date | date: "%b %d %Y" }}</span>
                 <span class="px-3 float-right text-right">{{ post.content | number_of_words }}</span>
             </div>
-            <div class="col-8"><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+            <div class="col-8"><a class="post-link" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
         </div>
     {% endfor %}
     <p><a href="">more...</a></p>
 </div>
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.baseurl }}/articles">wangspx.github.io/note</a>
+[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">wangspx.github.io/note</a>
 
 
 
