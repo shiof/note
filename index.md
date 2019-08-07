@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 ~~~
@@ -13,15 +13,30 @@ layout: home
     '\/__//__/  \/__/\/_/\/_/\/_/\/___L\ \/___/  \ \ \/ 
                                    /\____/        \ \_\ 
                                    \_/__/          \/_/ 
-             I am just a person calling the interface...
 
+             I am just a person calling the interface...
 ~~~
+
+[root@iZwz9j80yesn9eqdugq563Z ~]# echo $MY_GITHUB
+
+[https://github.com/wangspx](https://github.com/wangspx)
+
+[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.baseurl }}/articles">wangspx.github.io/tags</a>
+
+<div>
+<p>total: {{site.tags | size}}</p>
+<p>
+{% for tag in site.tags %}
+    <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}">{{ tag | first }}</a>
+{% endfor %}
+</p>
+</div>
 
 [root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.baseurl }}/articles">wangspx.github.io/articles</a> <span> | head -n 5</span>
 
 <div>
     <p>total: {{site.categories.article | size}}</p>
-    {% for post in site.categories.article %}
+    {% for post in site.categories.article limit:5 %}
         <div class="row">
             <div class="col pr-0">
                 <span>-rwxr-xr-x. 1 </span>
@@ -42,17 +57,6 @@ layout: home
 </div>
 
 [root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.baseurl }}/articles">wangspx.github.io/note</a>
-
-[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.baseurl }}/articles">wangspx.github.io/tags</a>
-
-<div>
-<p>total: {{site.tags | size}}</p>
-{% for tag in site.tags %}
-    {% assign count = tag | last | size %}
-    {% assign fontsize = count | times: 4 %}
-    <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}">{{ tag | first }}</a>
-{% endfor %}
-</div>
 
 
 

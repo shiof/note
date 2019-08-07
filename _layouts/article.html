@@ -6,16 +6,35 @@ layout: article
     {% include head.html %}
 <body class="p-5">
 <div class="container">
+    <p>
+        <a href="{{ site.url }}"> << Return Home</a>
+    </p>
+
     <h1>{{page.title}}</h1>
     <p></p>
     <p>
-        <span>{{page.date | date: "%Y-%m-%d"}}</span>
+        <span>Date: {{page.date | date: "%Y-%m-%d"}}</span>
+        {% if page.tags != nil %}
+        <span>| Tags: </span>
         {% for tag in page.tags %}
-            <a href="">{{tag}}</a>
+        <a href="">{{tag}}</a>
         {% endfor %}
+        {% endif %}
+        <span>| Words: {{ content | strip_html | strip_newlines | remove: " " | size}}</span>
     </p>
     <hr>
     {{ content }}
+
+    <div class="row">
+        <div class="col">
+        {% if page.previous != nil %}
+        <span class="float-left"><a href="{{page.previous.url}}"><< PREVIOUS: {{page.previous.title}}</a></span>
+        {% endif %}
+        {% if page.next != nil %}
+        <span class="float-right"><a href="{{page.next.url}}">NEXT: {{page.next.title}} >></a></span>
+        {% endif %}
+        </div>
+    </div>
 </div>
 {% include footer.html %}
 {% include import.html %}
