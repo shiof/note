@@ -28,10 +28,10 @@ layout: article
     <div class="row">
         <div class="col">
         {% if page.previous != nil %}
-        <span class="float-left"><a href="{{page.previous.url}}"><< PREVIOUS: {{page.previous.title}}</a></span>
+        <span class="float-left"><a href="{{ site.url }}/{{page.previous.url}}"><< PREVIOUS: {{page.previous.title}}</a></span>
         {% endif %}
         {% if page.next != nil %}
-        <span class="float-right"><a href="{{page.next.url}}">NEXT: {{page.next.title}} >></a></span>
+        <span class="float-right"><a href="{{ site.url }}/{{page.next.url}}">NEXT: {{page.next.title}} >></a></span>
         {% endif %}
         </div>
     </div>
