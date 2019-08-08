@@ -32,7 +32,7 @@ plugins:
 gems:
   - jekyll-paginate
 
-paginate: 2
+paginate: 10
 paginate_path: "articles/page-:num"
 
 # Exclude from processing.
