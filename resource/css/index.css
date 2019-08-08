@@ -57,3 +57,25 @@ footer {
 .row{
     margin-bottom: 1rem;
 }
+
+.page-link {
+    color: #52c41a;
+    margin-left: unset;
+    line-height: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.page-item.active .page-link {
+    background-color: unset;
+    border-color: unset;
+}
+
+
+.page-link:hover {
+    z-index: 2;
+    color: #389e0d;
+    text-decoration: underline;
+    background-color: unset;
+    border-color: unset;
+}
