@@ -79,3 +79,23 @@ footer {
     background-color: unset;
     border-color: unset;
 }
+
+.line::after {
+    content:'';
+    width: 2px;
+    display: inline-block;
+    height: 14px;
+    vertical-align: text-bottom;
+    animation: blink 1s infinite steps(1, start)
+}
+@keyframes blink {
+    0% {
+        background-color: #52c41a;
+    }
+    50% {
+        background-color: unset;
+    }
+    100% {
+        background-color: #52c41a;
+    }
+}

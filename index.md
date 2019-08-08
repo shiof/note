@@ -31,7 +31,7 @@ wangspx.github.io
     <p><a href="{{ site.url }}/articles">more...</a></p>
 </div>
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">./note</a>
+[root@iZwz9j80yesn9eqdugq563Z ~]# <i class="line" />
 
 
 
