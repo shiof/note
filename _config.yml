@@ -29,6 +29,9 @@ theme:
 plugins:
   - jekyll-feed
 
+gems:
+  - jekyll-paginate
+
 paginate: 1
 paginate_path: "articles/page:num"
 

@@ -13,12 +13,12 @@ wangspx.github.io
 [root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.url }}/articles">wangspx.github.io/tags</a>
 
 <div>
-<p>total: {{site.tags | size}}</p>
-<p>
-{% for tag in site.tags %}
-    <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}">{{ tag | first }}</a>
-{% endfor %}
-</p>
+    <p>total: {{site.tags | size}}</p>
+    <p>
+    {% for tag in site.tags %}
+        <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}">{{ tag | first }}</a>
+    {% endfor %}
+    </p>
 </div>
 
 [root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">wangspx.github.io/articles</a> <span> | head -n 5</span>
@@ -46,6 +46,28 @@ wangspx.github.io
 </div>
 
 [root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">wangspx.github.io/note</a>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page == 1 %}
+    <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+    {% elsif paginator.previous_page%}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+    {% else %}
+    <span class="page-item">&laquo;</span>
+    {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
+    <span class="page-item">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
+    {% endif %} {% endfor %} {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
+    {% else %}
+    <span class="page-item">&raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
 
 
 
