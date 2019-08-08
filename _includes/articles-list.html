@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col pr-0">
         <span>-rwxr-xr-x. 1 </span>
-        <span>
-            {% assign tag = post.tags | sort %}
-                {% for category in tag %}
-                 <span> <a href="{{ site.url }}category/#{{ category }}" class="reserved">{{ category }}</a> </span>
+        <span class="text-right">
+            {% assign t = post.tags | sort %}
+                {% for category in t %}
+                <a href="{{ site.url }}/tags/#{{ category }}">{{ category }}</a>
                 {% endfor %}
             {% assign tag = nil %}
         </span>

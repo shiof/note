@@ -10,13 +10,13 @@ wangspx.github.io
 
 [https://github.com/wangspx](https://github.com/wangspx)
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.url }}/articles">./tags</a>
+[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.url }}/tags">./tags</a>
 
 <div>
     <p>total: {{site.tags | size}}</p>
     <p>
     {% for tag in site.tags %}
-        <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}">{{ tag | first }}</a>
+        <a class="post-tags-item" href="{{ site.url }}/tags#{{ tag | first }}">{{ tag | first }}</a>
     {% endfor %}
     </p>
 </div>
