@@ -32,8 +32,8 @@ plugins:
 gems:
   - jekyll-paginate
 
-paginate: 1
-paginate_path: "articles/page:num"
+paginate: 2
+paginate_path: "articles/page-:num"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
