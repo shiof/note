@@ -29,6 +29,9 @@ theme:
 plugins:
   - jekyll-feed
 
+paginate: 1
+paginate_path: "articles/page:num"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

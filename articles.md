@@ -4,24 +4,9 @@ layout: default
 
 [root@iZwz9j80yesn9eqdugq563Z ~]# pwd
 
-wangspx.github.io
+wangspx.github.io/articles
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# echo $MY_GITHUB
-
-[https://github.com/wangspx](https://github.com/wangspx)
-
-[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.url }}/articles">wangspx.github.io/tags</a>
-
-<div>
-<p>total: {{site.tags | size}}</p>
-<p>
-{% for tag in site.tags %}
-    <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}">{{ tag | first }}</a>
-{% endfor %}
-</p>
-</div>
-
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">wangspx.github.io/articles</a> <span> | head -n 5</span>
+[root@iZwz9j80yesn9eqdugq563Z ~]# <span>ll | head -n 5</span>
 
 <div>
     <p>total: {{site.categories.article | size}}</p>
@@ -45,7 +30,29 @@ wangspx.github.io
     <p><a href="">more...</a></p>
 </div>
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">wangspx.github.io/note</a>
 
-
-
+<!-- 遍历分页后的文章 -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
+ 
+<!-- 分页链接 -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
