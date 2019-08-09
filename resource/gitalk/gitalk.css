@@ -850,7 +850,6 @@
   white-space: nowrap;
   cursor: pointer;
   border: 1px dashed rgba(255,255,255,0.5);
-  border-radius: 5px;
   background-color: rgba(255,255,255,0.05);
   outline: none;
   font-size: 0.75em;
@@ -1012,7 +1011,6 @@
   width: 100%;
   min-height: 5.125em;
   max-height: 15em;
-  border-radius: 5px;
   border: 1px dashed rgba(255,255,255,0.5);
   font-size: 0.875em;
   word-wrap: break-word;
@@ -1028,7 +1026,6 @@
 .gt-container .gt-header-preview {
   min-height: 5.125em;
   padding: 0.75em;
-  border-radius: 5px;
   background-color: rgba(255,255,255,0.05);
   border: 1px dashed rgba(255,255,255,0.5);
 }
