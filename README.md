@@ -1,8 +1,8 @@
 # wangspx.github.io
 
-linux风格的博客主题
+linux终端风格的博客主题
 
-#### 文章模板
+#### 文章头部模板
 
 ~~~
 
@@ -17,4 +17,26 @@ tags:
     - code
 ---
 
+~~~
+
+#### 依赖插件
+
+* bootstrap-4.3.1
+* jekyll-paginate
+* gitalk
+
+#### 目录结构
+
+~~~
+├─articles //文章分页
+├─resource //静态资源
+│  ├─bootstrap-4.3.1-dist
+│  │  ├─css
+│  │  └─js
+│  ├─css
+│  ├─gitalk
+│  └─js
+├─_includes //共用HTML
+├─_layouts //页面布局
+├─_posts //文章内容存放处
 ~~~
