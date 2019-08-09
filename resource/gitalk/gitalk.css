@@ -849,10 +849,9 @@
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  border: 1px solid #6190e8;
+  border: 1px dashed rgba(255,255,255,0.5);
   border-radius: 5px;
-  background-color: #6190e8;
-  color: #fff;
+  background-color: rgba(255,255,255,0.05);
   outline: none;
   font-size: 0.75em;
 }
@@ -875,16 +874,14 @@
   margin-right: 0;
 }
 .gt-container .gt-btn-preview {
-  background-color: #fff;
-  color: #6190e8;
 }
 .gt-container .gt-btn-preview:hover {
-  background-color: #f2f2f2;
-  border-color: #81a6ed;
+  background-color: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,1);
 }
 .gt-container .gt-btn-public:hover {
-  background-color: #81a6ed;
-  border-color: #81a6ed;
+  background-color: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,1);
 }
 .gt-container .gt-error {
   text-align: center;
