@@ -30,7 +30,7 @@ docker inspect tomcat
 ### 查看镜像信息某个字段
 
 ~~~shell
-docker inspect -f {{.NetworkSettings.IPAddress}} tomcat
+docker inspect -f {% raw %} {{.NetworkSettings.IPAddress}} {% endraw %} tomcat
 ~~~
 
 ### 安装sonarqube

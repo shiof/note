@@ -2,7 +2,7 @@
     <div class="col-md-auto pr-0">
         <span>-rwxr-xr--. {{ forloop.index | minus:1 }}</span>
     </div>
-    <div class="col">
+    <div class="col text-truncate" style="max-width: 160px;">
         {% assign tags = post.tags | sort %}
         {% for category in tags %}
         <span>
