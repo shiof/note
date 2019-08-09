@@ -5,8 +5,8 @@ date:	2018-06-10 17:20:31
 categories:
     - article
 tags:
-    - hadoop
-    - bigdata
+    - Hadoop
+    - BigData
 ---
 
 在上一章节已经配置过hadoop的环境变量，现在可以直接使用**hadoop**和**hdfs**命令

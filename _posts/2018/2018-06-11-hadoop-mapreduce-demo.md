@@ -5,8 +5,8 @@ date:	2018-06-11 14:01:33
 categories:
     - article
 tags:
-    - hadoop
-    - bigdata
+    - Hadoop
+    - BigData
 ---
 
 
