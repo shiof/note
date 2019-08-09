@@ -126,6 +126,7 @@ hdfs version
 
 
 配置yarn-site.xml
+
 ~~~shell
 <configuration>
     <property>
@@ -224,6 +225,7 @@ EOF
 mkdir -p /opt/app/hadoop-2.7.5/hdfsdata/hdfs/namenode /opt/app/hadoop-2.7.5/hdfsdata/hdfs/datanode
 /opt/app/hadoop-2.7.5/bin/hdfs namenode -format
 ~~~
+
 ![](./img/1.png)
 
 启动hadoop
@@ -271,5 +273,3 @@ mkdir -p /opt/app/hadoop-2.7.5/hdfsdata/hdfs/namenode /opt/app/hadoop-2.7.5/hdfs
 ~~~shell
 /opt/app/hadoop-2.7.5/sbin/stop-all.sh
 ~~~
-
-启动时，报找不到JAVA路径的话，见[ISSUE1](https://gitlab.cae.com/spwang/hadoop/issues/1)， 以及[常见的启动报错问题](https://gitlab.cae.com/spwang/hadoop/issues?scope=all&utf8=%E2%9C%93&state=all)
