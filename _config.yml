@@ -25,6 +25,7 @@ github_username:  wangspx
 
 # Build settings
 markdown: kramdown
+
 theme:
 plugins:
   - jekyll-feed

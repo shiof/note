@@ -1,15 +1,19 @@
 <div class="row">
-    <div class="col pr-0">
-        <span>-rwxr-xr-x. 1 </span>
-        <span class="text-right">
-            {% assign t = post.tags | sort %}
-                {% for category in t %}
-                <a href="{{ site.url }}/tags/#{{ category }}">{{ category }}</a>
-                {% endfor %}
-            {% assign tag = nil %}
-        </span>
-        <span class="float-right text-right">{{ post.date | date: "%b %d %Y" }}</span>
-        <span class="px-3 float-right text-right">{{ post.content | number_of_words }}</span>
+    <div class="col-md-auto pr-0">
+        <span>-rwxr-xr--. {{ forloop.index | minus:1 }}</span>
     </div>
-    <div class="col-8"><a class="post-link" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
+    <div class="col">
+        {% assign tags = post.tags | sort %}
+        {% for category in tags %}
+        <span>
+            <a href="{{ site.url }}/tags/#{{ category }}">{{ category }}</a>
+        </span>
+        {% if forloop.last != true %}
+        {{ " " }}
+        {% endif %}
+        {% endfor %}
+        {% assign tags = nil %}
+    </div>
+    <div class="col-md-auto p-0"><span class="float-right text-right">{{ post.date | date: "%b %d %Y" }}</span></div>
+    <div class="col-7"><a class="post-link" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
 </div>
