@@ -12,6 +12,31 @@ pre {
     color: rgba(255,255,255,0.4);
 }
 
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border: 1px dashed rgba(255,255,255,0.5);
+}
+
+table td, table th {
+    padding: .75rem;
+    vertical-align: top;
+    text-align: inherit;
+    border: 1px dashed rgba(255,255,255,0.5);
+}
+
+blockquote{
+    border-left: 1px dashed rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.05);
+    padding: 1rem;
+}
+
+blockquote p {
+    margin: unset;
+    padding: unset;
+}
+
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
