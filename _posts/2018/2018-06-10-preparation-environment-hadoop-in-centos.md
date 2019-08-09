@@ -1,6 +1,6 @@
 ---
 layout: article
-title:	hadoop集群环境准备
+title:	Hadoop集群环境准备
 date:	2018-06-10 15:11:56
 categories:
     - article

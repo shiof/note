@@ -1,6 +1,6 @@
 ---
 layout: article
-title:	hadoop常用命令
+title:	Hadoop常用命令
 date:	2018-06-10 17:20:31
 categories:
     - article

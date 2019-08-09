@@ -1,6 +1,6 @@
 ---
 layout: article
-title:	hadoop集群搭建
+title:	Hadoop集群搭建
 date:	2018-06-10 16:41:26
 categories:
     - article
