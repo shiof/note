@@ -37,7 +37,7 @@ MapReduce分为6个阶段：Input、Split、Map、Shuffle、Reduce、output。
 
 ###### π 0-9统计数据流向图
 
-![image](https://user-images.githubusercontent.com/29170657/62766375-e9c6ff80-bac4-11e9-9bbc-31c2d43cc4d1.png)
+![image](https://user-images.githubusercontent.com/29170657/62766698-a91bb600-bac5-11e9-8229-5270e2a18593.png)
 
 ##### 3. 程序实现
 
