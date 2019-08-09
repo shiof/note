@@ -1029,10 +1029,11 @@
   background-color: rgba(255,255,255,0.1);
 }
 .gt-container .gt-header-preview {
+  min-height: 5.125em;
   padding: 0.75em;
   border-radius: 5px;
-  border: 1px solid rgba(0,0,0,0.1);
-  background-color: #f6f6f6;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px dashed rgba(255,255,255,0.5);
 }
 .gt-container .gt-header-controls {
   position: relative;
@@ -1146,7 +1147,7 @@
 }
 .gt-container .gt-comment-username {
   font-weight: 500;
-  color: #6190e8;
+  color: #52c41a;
   text-decoration: none;
 }
 .gt-container .gt-comment-username:hover {
@@ -1184,7 +1185,8 @@
   color: #333 !important;
 }
 .gt-container .gt-comment-admin .gt-comment-content {
-  background-color: #f6f9fe;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px dashed rgba(255,255,255,0.5);
 }
 @-webkit-keyframes gt-kf-rotate {
   0% {
