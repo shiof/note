@@ -15,6 +15,24 @@ tags:
 docker images|grep none|awk '{print $3 }'|xargs docker rmi -f
 ~~~
 
+### 删除所有容器
+
+~~~shell
+docker rm `docker ps -a -q`
+~~~
+
+### 查看镜像信息
+
+~~~shell
+docker inspect tomcat
+~~~
+
+### 查看镜像信息某个字段
+
+~~~shell
+docker inspect -f {{.NetworkSettings.IPAddress}} tomcat
+~~~
+
 ### 安装sonarqube
 
 ~~~shell
