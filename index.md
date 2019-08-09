@@ -2,15 +2,15 @@
 layout: default
 ---
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# pwd
+[root@wangspx.github.io ~]# pwd
 
 wangspx.github.io
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# echo $MY_GITHUB
+[root@wangspx.github.io ~]# echo $MY_GITHUB
 
 [https://github.com/wangspx](https://github.com/wangspx)
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ls <a href="{{ site.url }}/tags">./tags</a>
+[root@wangspx.github.io ~]# ls <a href="{{ site.url }}/tags">./tags</a>
 
 <div>
     <p>total: {{site.tags | size}}</p>
@@ -21,7 +21,7 @@ wangspx.github.io
     </p>
 </div>
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a href="{{ site.url }}/articles">./articles</a> <span> | head -n 5</span>
+[root@wangspx.github.io ~]# ll <a href="{{ site.url }}/articles">./articles</a> <span> | head -n 5</span>
 
 <div>
     <p>total: {{site.categories.article | size}}</p>
@@ -31,7 +31,7 @@ wangspx.github.io
     <p><a href="{{ site.url }}/articles">more...</a></p>
 </div>
 
-[root@iZwz9j80yesn9eqdugq563Z ~]# <i class="line" />
+[root@wangspx.github.io ~]# <i class="line" />
 
 
 

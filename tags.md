@@ -7,7 +7,7 @@ layout: default
 </p>
 
 {% for tag in site.tags %} 
-[root@iZwz9j80yesn9eqdugq563Z ~]# ll <a id="{{ tag[0] }}" href="#{{ tag[0] }}">./{{ tag[0] }}</a>
+[root@wangspx.github.io ~]# ll <a id="{{ tag[0] }}" href="#{{ tag[0] }}">./{{ tag[0] }}</a>
 <ul class="index">
     {% assign posts = tag[1] %}  
         <p>total: {{ posts | size }}</p>
