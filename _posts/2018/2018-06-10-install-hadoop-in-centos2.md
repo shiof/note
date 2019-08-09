@@ -226,7 +226,7 @@ mkdir -p /opt/app/hadoop-2.7.5/hdfsdata/hdfs/namenode /opt/app/hadoop-2.7.5/hdfs
 /opt/app/hadoop-2.7.5/bin/hdfs namenode -format
 ~~~
 
-![](./img/1.png)
+![image](https://user-images.githubusercontent.com/29170657/62763560-6f937c80-babe-11e9-81ed-0810d3b6fb97.png)
 
 启动hadoop
 
@@ -259,7 +259,7 @@ mkdir -p /opt/app/hadoop-2.7.5/hdfsdata/hdfs/namenode /opt/app/hadoop-2.7.5/hdfs
 页面访问namenode
 [http://192.168.56.110:50070](http://192.168.56.110:50070)
 
-![](./img/2.jpg)
+![image](https://user-images.githubusercontent.com/29170657/62766301-b7b59d80-bac4-11e9-8600-df341f8afecb.png)
 
 页面访问datanode
 [http://192.168.56.111:50075](http://192.168.56.111:50075)
