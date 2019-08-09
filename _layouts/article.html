@@ -17,7 +17,7 @@ layout: default
     {% if page.tags != nil %}
     <span>| Tags: </span>
     {% for tag in page.tags %}
-    <a href="">{{tag}}</a>
+    <a href="{{ site.url }}/tags#{{ tag }}">{{tag}}</a>
     {% endfor %}
     {% endif %}
     <span>| Words: {{ content | strip_html | strip_newlines | remove: " " | size}}</span>
