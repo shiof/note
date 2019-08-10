@@ -28,12 +28,9 @@ html, body {
     }
 }
 
-h1 { color: #52c41a; }
-h2 { color: #52c41a; }
-h3 { color: #52c41a; }
-h4 { color: #52c41a; }
-h5 { color: #52c41a; }
-h6 { color: #52c41a; }
+h1, h2, h3, h4, h5, h6 {
+    color: #389e0d;
+}
 
 li{list-style-type:none;}
 
