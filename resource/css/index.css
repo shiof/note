@@ -13,6 +13,21 @@ html, body {
     color: #b3b3b3;
 }
 
+@media screen  and (min-width: 576px){
+    body {
+        padding-top: 1.5rem !important;
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+}
+
+@media screen  and (max-width: 576px){
+    .container {
+        padding: unset;
+        margin: unset;
+    }
+}
+
 h1 { color: #52c41a; }
 h2 { color: #52c41a; }
 h3 { color: #52c41a; }
