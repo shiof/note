@@ -83,11 +83,11 @@ tags:
 
 ### Kafka批量生产机制
 
-1. 在客户端通过异步接口发送消息，消息首先在客户端根据分区打包
+1.在客户端通过异步接口发送消息，消息首先在客户端根据分区打包
 
-2. 发送线程根据分区Leader所在broker，把多个batch组成一个请求，打包发送。
+2.发送线程根据分区Leader所在broker，把多个batch组成一个请求，打包发送。
 
-3. 2个参数控制打包速度：当batch.size达到或者linger.ms时间达到。批量发送包的大小越大吞吐量越高，但是时延也响应增
+3.2个参数控制打包速度：当batch.size达到或者linger.ms时间达到。批量发送包的大小越大吞吐量越高，但是时延也响应增
 
 ![image](https://user-images.githubusercontent.com/29170657/62873342-d086b300-bd51-11e9-9544-5b34e6212a38.png)
 
@@ -113,11 +113,11 @@ tags:
 
 分布式系统下，单点故障不可避免，kafka如何管理节点故障?
 
-1. 从Kafka的broker中选择一个节点作为分区管理与副本状态变更的控制，称为controller。
+1.从Kafka的broker中选择一个节点作为分区管理与副本状态变更的控制，称为controller。
 
-2. 统一侦听zk元数据变化，通知各节点状态信息。
+2.统一侦听zk元数据变化，通知各节点状态信息。
 
-3. 管理broker节点的故障恢复，对故障节点所在分区进行重新Leader选举，帮助业务故障切换到新的Leader
+3.管理broker节点的故障恢复，对故障节点所在分区进行重新Leader选举，帮助业务故障切换到新的Leader
 
 4.如果Controller节点本身故障？各个Broker节点通过watch zk的controller节点，如果controller故障，会触发节点进行争夺创建controller节点，创建上的节点成为新controller 
 
