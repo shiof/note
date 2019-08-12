@@ -1,6 +1,6 @@
 ---
 layout: article
-title:	kafka入门简介
+title:	kafka入门介绍
 date:	2019-08-12 21:44:56
 categories:
     - article
