@@ -21,7 +21,7 @@ layout: default
     {% endfor %}
     {% endif %}
     <span>| Words: {{ content | strip_html | strip_newlines | remove: " " | size}}</span>
-    <span id="busuanzi_container_site_pv">| Read: <span id="busuanzi_value_site_pv"></span></span>
+    <span id="busuanzi_container_site_pv">| Read: <span id="busuanzi_value_page_pv"></span></span>
 </p>
 
 <hr>
@@ -42,3 +42,9 @@ layout: default
 </div>
 
 {% include comment.html %}
+
+<style>
+    #busuanzi_container_site_pv {
+        display: none;
+    }
+</style>
