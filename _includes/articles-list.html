@@ -3,7 +3,7 @@
     <span class="text-truncate pl-3" style="width: 150px;">
         {% assign tags = post.tags | sort %}
         {% for category in tags %}
-            <a href="{{ site.url }}/tags/#{{ category }}">{{ category }}</a>
+            <a href="{{ site.url }}/tags#{{ category }}">{{ category }}</a>
         {% if forloop.last != true %}
         {{ " " }}
         {% endif %}
