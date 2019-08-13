@@ -19,10 +19,9 @@ cd kafka_2.12-2.3.0
 
 ### 修改配置文件 `server.properties`
 
-
 该`broker.id`属性是群集中每个节点的唯一且永久的名称
 
-~~~properties
+~~~
 #config/server-1.properties:
 broker.id=1
 listeners=PLAINTEXT://localhost:9093
