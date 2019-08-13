@@ -1,6 +1,6 @@
 ---
 layout: article
-title:	Test TiTle
+title:	Kafka安装
 date:	2019-08-13 08:26:02
 categories:
     - article
