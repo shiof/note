@@ -25,7 +25,7 @@ tags:
 
 5.日志通道: 做为重要日志的监控通信管道，将应用日志监控对系统性能影响降到最.
 
-### Kafka：一种分布式、基于发布/订阅的消息中间件•
+### Kafka 一种分布式、基于发布/订阅的消息中间件
 
 1.高性能、高吞吐 顺序写盘、消息压缩•
 
@@ -35,7 +35,7 @@ tags:
 
 ### 以kafka 为中心的解决方案
 
-![image](https://user-images.githubusercontent.com/29170657/62872094-4e958a80-bd4f-11e9-9448-1b9a05c2061c.png)
+![image](https://user-images.githubusercontent.com/29170657/62908725-0d7f9380-bdac-11e9-8141-d80feaad4ca0.png)
 
 ### kafka基本概念
 
