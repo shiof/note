@@ -32,3 +32,7 @@ docker run -itd --name sonarqube \
     --restart=always \
     sonarqube
 ~~~
+
+### 参考
+
+> [1] [docker官方例子](https://docs.docker.com/samples/)
