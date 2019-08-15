@@ -6,7 +6,7 @@ categories:
     - article
 tags:
     - Java
-    - kafka
+    - Kafka
 ---
 
 ### 安装地址
