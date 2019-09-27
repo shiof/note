@@ -65,23 +65,23 @@ tags:
     
     1.3 实现`InitializingBean`和`DisposableBean`接口
     
-        ~~~java
-        public class UserEntity implements InitializingBean, DisposableBean {
-            private String username;
-            private String password;
-            private int age;
-        
-            @Override
-            public void afterPropertiesSet() throws Exception {
-                
-            }
+    ~~~java
+    public class UserEntity implements InitializingBean, DisposableBean {
+        private String username;
+        private String password;
+        private int age;
+    
+        @Override
+        public void afterPropertiesSet() throws Exception {
             
-            @Override
-            public void destroy() throws Exception {
-                
-            }
         }
-        ~~~
+        
+        @Override
+        public void destroy() throws Exception {
+            
+        }
+    }
+    ~~~
 
     >`InitializingBean`接口：当`bean`属性赋值和初始化完成时，调用`afterPropertiesSet`方法() 。
     >
