@@ -31,9 +31,9 @@ tags:
 
 ### Spring Bean 的生命周期
 
-1. `bean`初始化和销毁
+1. `Bean`初始化和销毁
 
-    1.1 `@bean`属性指定方法
+    1.1 `@Bean`属性指定方法
 
     ~~~java
     @Configuration
@@ -87,4 +87,20 @@ tags:
     >
     >`DisposableBean`接口： 当`bean`被销毁时，调用`destroy`方法。
 
+2. `Bean`前后置处理器
 
+~~~java
+public class BeanEntity implements BeanPostProcessor {
+    @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        return null;
+    }
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        return null;
+    }
+}
+~~~
+
+> 实现`Bean`功能增强。
