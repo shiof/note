@@ -23,5 +23,68 @@ tags:
     
     3.2 实现`ImportBeanDefinitionRegistrar` 接口，把所有需要添加到容器中的Bean添加到容器中。也可以用来判断是依赖的Bean是否已经被注册，如果没有就不加入到容器中。
 
-4. 实现`FactoryBean`接口 
+4. 实现`FactoryBean`接口
+
+>`beanDefinitionMap`： IOC容器
+>
+>`rootBeanDefinition`：容器的根节点
+
+### Spring Bean 的生命周期
+
+1. `bean`初始化和销毁
+
+    1.1 `@bean`属性指定方法
+
+    ~~~java
+    @Configuration
+    public class InitBean {
+        @Bean(value = "xiaoming", initMethod = "init", destroyMethod = "destroy")
+        public UserEntity userEntity(){
+            return new UserEntity("xiaoming","123456", 18);
+        }
+    }
+    ~~~
+
+    1.2 `@PostConstruct`和`@PreDestroy`
+    
+    ~~~java
+    public class UserEntity {
+       private String username;
+       private String password;
+       private int age;
+       
+       @PostConstruct
+       private void init() {
+       }
+    
+       @PreDestroy
+       private void destroy() {
+       }
+    }
+    ~~~
+    
+    1.3 实现`InitializingBean`和`DisposableBean`接口
+    
+        ~~~java
+        public class UserEntity implements InitializingBean, DisposableBean {
+            private String username;
+            private String password;
+            private int age;
+        
+            @Override
+            public void afterPropertiesSet() throws Exception {
+                
+            }
+            
+            @Override
+            public void destroy() throws Exception {
+                
+            }
+        }
+        ~~~
+
+    >`InitializingBean`接口：当`bean`属性赋值和初始化完成时，调用`afterPropertiesSet`方法() 。
+    >
+    >`DisposableBean`接口： 当`bean`被销毁时，调用`destroy`方法。
+
 
