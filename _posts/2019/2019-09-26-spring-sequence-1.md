@@ -103,4 +103,21 @@ public class BeanEntity implements BeanPostProcessor {
 }
 ~~~
 
+3. IOC容器上下文`Aware`接口
+
+~~~java
+public class BeanEntity implements ApplicationContextAware {
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    }
+}
+~~~
+
+
 > 实现`Bean`功能增强。
+
+#### 备注
+
+> `@Autowired` -> `AutowiredAnnotationBeanPostProcessor`
+>
+>
