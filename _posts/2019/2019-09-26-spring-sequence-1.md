@@ -105,6 +105,8 @@ public class BeanEntity implements BeanPostProcessor {
 
 3. IOC容器上下文`Aware`接口
 
+`Aware` 可以拿到IOC容器，并可以对其进行修改。
+
 ~~~java
 public class BeanEntity implements ApplicationContextAware {
     @Override
@@ -115,6 +117,10 @@ public class BeanEntity implements ApplicationContextAware {
 
 
 > 实现`Bean`功能增强。
+
+#### IOC初始化流程
+
+容器启动加载配置类 -> refresh() -> finishBeanFactoryInitialization() -> getBean() -> doCreateBean() -> (对象的创建) beanWrapper -> (属性赋值) populated() -> inializate() -> processors -> Aware
 
 #### 备注
 
