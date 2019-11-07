@@ -47,3 +47,13 @@ docker inspect -f {% raw %} {{.NetworkSettings.IPAddress}} {% endraw %} tomcat
 
 
 > [1] [https://docs.docker.com/engine/reference/commandline/network_create/#specify-advanced-options](https://docs.docker.com/engine/reference/commandline/network_create/#specify-advanced-options)
+
+### 批量打包镜像
+
+~~~shell
+docker save $(docker images | grep -v REPOSITORY | awk 'BEGIN{OFS=":";ORS=" "}{print $1,$2}') -o k8s-master.tar
+~~~
+
+~~~shell
+docker load -i k8s-master.tar
+~~~
