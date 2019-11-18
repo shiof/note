@@ -9,6 +9,12 @@ tags:
     - Linux
 ---
 
+### 安装redis私有仓库
+
+~~~shell
+docker run -itd --name redis-test -p 6379:6379 redis
+~~~
+
 ### 安装docker私有仓库
 
 ~~~shell
